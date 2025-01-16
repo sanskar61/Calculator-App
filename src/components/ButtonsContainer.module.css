@@ -1,0 +1,36 @@
+.buttonsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .button {
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #d6d6d6;
+    transform: scale(1.05);
+  }
+  
+  .button:active {
+    background-color: #ccc;
+  }
+  
+  .button:nth-child(4n) {
+    background-color: #f9b233; /* Different color for operators */
+  }
+  
+  .button:nth-child(4n):hover {
+    background-color: #f39c12;
+  }
+  
